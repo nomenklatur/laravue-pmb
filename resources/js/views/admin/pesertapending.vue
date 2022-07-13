@@ -29,7 +29,8 @@
                     <tr>
                       <th style="width: 10px">No.</th>
                       <th>Nama</th>
-                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Nomor Hp</th>
                       <th>Status</th>
                       <th>Bukti Transfer</th>
                       <th>File Rekom</th>
@@ -47,6 +48,7 @@
                       <td>{{ orderNumber(i) }}</td>
                       <td>{{ item.name }}</td>
                       <td>{{ item.username }}</td>
+                      <td>{{ item.no_hp }}</td>
                       <td>Pending</td>
                       <td>
                             <a v-if="item.upload" :href="'/images/'+item.upload.image" target="blank" > Bukti Transfer</a>

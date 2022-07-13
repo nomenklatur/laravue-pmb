@@ -49,7 +49,8 @@
                       <th style="width: 10px">No.</th>
                       <th>Nomor Ujian</th>
                       <th>Nama</th>
-                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Nomor Hp</th>
                       <th>Prodi</th>
                       <th>Tahun Terdaftar</th>
                       <th>File Rekom</th>
@@ -68,6 +69,7 @@
                       <td>{{ item.test_number}}</td>
                       <td>{{ item.name }}</td>
                       <td>{{ item.username }}</td>
+                      <td>{{ item.no_hp}}</td>
                       <td>{{ item.prodi.names}}</td>
                       <td>{{ item.year===0 ? '2021' : item.year }}</td>
                       <td>
