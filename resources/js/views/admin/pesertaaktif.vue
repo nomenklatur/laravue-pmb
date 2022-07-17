@@ -31,6 +31,7 @@
                       <th style="width: 10px">No.</th>
                       <th>Nama</th>
                       <th>Username</th>
+                      <th>Nomor Hp</th>
                       <th>Tahun Terdaftar</th>
                       <th>Pilihan Prodi 1</th>
                       <th>Pilihan Prodi 2</th>
@@ -45,6 +46,7 @@
                       <td>{{ orderNumber(i) }}</td>
                       <td>{{ item.name }}</td>
                       <td>{{ item.username }}</td>
+                      <td>{{ item.no_hp }}</td>
                       <td>{{ item.year===0 ? '2021' : item.year }}</td>
                       <td>{{ item.prodi.names}}</td>
                       <td>{{ item.prodi1? item.prodi1.names : 'Prodi 2 Belum dipilih'}}</td>

@@ -72,30 +72,12 @@
                       <td>{{ item.no_hp}}</td>
                       <td>{{ item.prodi.names}}</td>
                       <td>{{ item.year===0 ? '2021' : item.year }}</td>
-                      <td>
-                        <a :href="'/upload_file/'+item.file.file_rekom" v-if="item.file.file_rekom!=''">File Rekom</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
-                      <td>
-                        <a :href="'/print/' + item.id" v-if="item.file!=null" target="_blank">File Kartu</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
-                      <td>
-                        <a :href="'/upload_file/'+item.file.file_cv" v-if="item.file.file_cv!=''">File CV</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
-                      <td>
-                        <a :href="'/upload_file/'+item.file.file_transkrip" v-if="item.file.file_transkrip!=''">File Transkrip</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
-                      <td>
-                        <a :href="'/upload_file/'+item.file.file_ijazah" v-if="item.file.file_ijazah!=''">File Ijazah</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
-                      <td>
-                        <a :href="'/upload_file/'+item.file.file_karyailmiah" v-if="item.file.file_karyailmiah!=''">File Karya Ilmiah</a>
-                        <p v-else>Belum diunggah</p>
-                      </td>
+                      <td><a :href="'/upload_file/'+item.file.file_rekom" v-if="item.file!=null">File Rekom</a></td>
+                      <td><a :href="'/print/' + item.id" target="_blank">File Kartu</a></td>
+                      <td><a :href="'/upload_file/'+item.file.file_cv" v-if="item.file!=null">File CV</a></td>
+                      <td><a :href="'/upload_file/'+item.file.file_transkrip" v-if="item.file!=null">File Transkrip</a></td>
+                      <td><a :href="'/print/' + item.file.file_ijazah" v-if="item.file!=null">File Ijazah</a></td>
+                      <td><a :href="'/upload_file/'+item.file.file_karyailmiah" v-if="item.file!=null">File Karya Ilmiah</a></td>
                       <td>Aktif</td>
                       <td align="center">   
                           <Button
